@@ -12,3 +12,7 @@ echo ""
 echo "Your private or local IP Address is : $privateIP"
 echo ""
 echo "Your public or internet IP address is : $(wget -qO- http://ipecho.net/plain | xargs echo)"
+
+
+# mac version
+# space available
