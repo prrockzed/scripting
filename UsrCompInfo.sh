@@ -1,13 +1,14 @@
 #!/bin/bash
 
+clear
 user=$(whoami)
 date=$(date)
 presentDiro=$(pwd)
 privateIP=$(ipconfig getifaddr en0)
 
-espeak "Hi $user" ; echo "You are currently 
+echo "You are currently 
 logged 
-in as $user."
+in as $user."; espeak "Hi $user"
 printf "\n"
 
 echo "Today's date is $date"
@@ -32,3 +33,21 @@ fi
 echo "Your private or local IP Address is : $privateIP"
 printf "\n"
 echo "Your public or internet IP address is : $(wget -qO- http://ipecho.net/plain | xargs echo)"
+
+sleep 1
+printf "\n"
+
+read -p "Do you want to check the space 
+available in your system? Press 'y' for yes and 
+'n' for no : " space
+printf "\n"
+
+if [ $space = "y" ]||[ $info = "Y" ]
+then
+df -H
+printf "\n"
+fi
+
+read -n 1 -s
+
+sl

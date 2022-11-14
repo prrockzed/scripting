@@ -4,7 +4,7 @@ clear
 
 name=$(whoami)
 toilet $name; espeak $name
-stty -echo
+read -n 1 -s
 cmatrix
 
 # name
