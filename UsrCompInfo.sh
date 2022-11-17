@@ -6,9 +6,7 @@ date=$(date)
 presentDiro=$(pwd)
 privateIP=$(ipconfig getifaddr en0)
 
-echo "You are currently 
-logged 
-in as $user."; espeak "Hi $user"
+echo "You are currently logged in as $user."; espeak "Hi $user"
 printf "\n"
 
 echo "Today's date is $date"
