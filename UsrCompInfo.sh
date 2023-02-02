@@ -6,7 +6,7 @@ date=$(date)
 presentDiro=$(pwd)
 privateIP=$(ipconfig getifaddr en0)
 
-echo "You are currently logged in as $user."; espeak "Hi $user"
+echo "You are currently logged in as $user."; espeak "Hi prrockzed"
 printf "\n"
 
 echo "Today's date is $date"
@@ -35,9 +35,7 @@ echo "Your public or internet IP address is : $(wget -qO- http://ipecho.net/plai
 sleep 1
 printf "\n"
 
-read -p "Do you want to check the space 
-available in your system? Press 'y' for yes and 
-'n' for no : " space
+read -p "Do you want to check the space available in your system? Press 'y' for yes and 'n' for no : " space
 printf "\n"
 
 if [ $space = "y" ]||[ $info = "Y" ]
